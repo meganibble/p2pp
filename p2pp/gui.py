@@ -1,7 +1,8 @@
 __author__ = 'Tom Van den Eede'
-__copyright__ = 'Copyright 2018-2022, Palette2 Splicer Post Processing Project'
+__copyright__ = 'Copyright 2018-2026, Palette2-3 Splicer Post Processing Project'
 __credits__ = ['Tom Van den Eede',
                'Tim Brookman'
+               'Christer Myrland'
                ]
 __license__ = 'GPLv3'
 __maintainer__ = 'Tom Van den Eede'
@@ -158,8 +159,17 @@ else:
     else:
         ui = ui_file
 
+# Get the correct path in bundled exe (PyInstaller _MEIPASS, cx_Freeze sys.executable dir, or source dir)
+if getattr(sys, 'frozen', False):
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(sys.executable))
+else:
+    base_path = os.path.dirname(os.path.abspath(__file__))
+
+# Build full path to the .ui file
+ui_path = os.path.join(base_path, "p2pp.ui")
+
 app = QApplication([])
-Form, Window = uic.loadUiType(ui)
+Form, Window = uic.loadUiType(ui_path)
 window = Window()
 form = Form()
 form.setupUi(window)

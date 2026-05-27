@@ -1,7 +1,8 @@
 __author__ = 'Tom Van den Eede'
-__copyright__ = 'Copyright 2018-2022, Palette2 Splicer Post Processing Project'
+__copyright__ = 'Copyright 2018-2022, Palette2-3 Splicer Post Processing Project'
 __credits__ = ['Tom Van den Eede',
-               'Tim Brookman'
+               'Tim Brookman',
+               'Christer Myrland',
                ]
 __license__ = 'GPLv3'
 __maintainer__ = 'Tom Van den Eede'
@@ -348,17 +349,28 @@ def parse_gcode_first_pass():
                 update_class(hash(line[5:]))
 
             # determine the layerheight at which we're printing
-            elif line.startswith(';LAYERHEIGHT'):  # Layer instructions, used to calculate the layer number
-                fields = line.split(' ')
-                try:
-                    lv = float(fields[1])
-                    lv = int((lv + 0.0001) * 1000) - flh
-                    if lv % olh == 0:
-                        process_layer(int(lv / olh), index)
-                    else:
-                        v.variable_layer_warning = True
-                except (ValueError, IndexError):
+            elif line.startswith(';LAYERHEIGHT') or line.startswith(';Z:') or line.startswith(';LAYER_CHANGE'):
+                # PS <= 2.6 emits ";LAYERHEIGHT <z>" for object layers only (modulus math works).
+                # PS 2.7+ emits ";LAYER_CHANGE\n;Z:<z>\n;HEIGHT:<h>" for every layer
+                #   including support insertions at non-uniform Z. Modulus math doesn't apply
+                #   when first_layer_height differs from layer_height (or with variable layer heights),
+                #   so we just count ";LAYER_CHANGE" markers and treat each as a layer.
+                if line.startswith(';LAYER_CHANGE'):
+                    process_layer(v.last_parsed_layer + 1 if v.last_parsed_layer >= 0 else 0, index)
+                elif line.startswith(';Z:'):
+                    # ignore - ;LAYER_CHANGE already advanced the counter for this layer
                     pass
+                else:
+                    # legacy ;LAYERHEIGHT path
+                    try:
+                        lv = float(line.split(' ')[1])
+                        lv = int((lv + 0.0001) * 1000) - flh
+                        if lv % olh == 0:
+                            process_layer(int(lv / olh), index)
+                        else:
+                            v.variable_layer_warning = True
+                    except (ValueError, IndexError):
+                        pass
 
         else:
 
@@ -961,7 +973,8 @@ def config_checks():
 
     skippable = optimize_tower_skip(int(v.max_tower_z_delta / v.layer_height))
     if v.tower_delta:
-        v.skippable_layer[0] = False
+        if v.skippable_layer:
+            v.skippable_layer[0] = False
         if skippable > 0:
             gui.log_warning(
                 "TOWERDELTA in effect for {} Layers or {:.2f}mm".format(skippable, skippable * v.layer_height))

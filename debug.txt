@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "P2PP.py", line 39, in <module>
+    import p2pp.checkversion as checkversion
+ModuleNotFoundError: No module named 'p2pp'
+[PYI-4592:ERROR] Failed to execute script 'P2PP' due to unhandled exception!

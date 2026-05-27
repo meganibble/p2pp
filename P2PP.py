@@ -1,8 +1,11 @@
 #!/usr/bin/pythonw
 __author__ = 'Tom Van den Eede'
-__copyright__ = 'Copyright 2018-2022, Palette2 Splicer Post Processing Project'
+__author__ = 'Christer Myrland'
+
+__copyright__ = 'Copyright 2018-2022, Palette2-3 Splicer Post Processing Project'
 __credits__ = ['Tom Van den Eede',
                'Tim Brookman'
+               'Christer Myrland'
                ]
 __license__ = 'GPLv3'
 __maintainer__ = 'Tom Van den Eede'
@@ -12,6 +15,15 @@ __status__ = 'Beta'
 import os
 import platform
 import sys
+
+if False:
+    dummy = [
+        "p2pp.ui",
+        "p2pp_config.ui",
+        "p2ppconf.ui",
+        "p3browser.ui",
+        "SendError.ui"
+    ]
 
 os.environ[
         "QTWEBENGINE_CHROMIUM_FLAGS"

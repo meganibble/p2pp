@@ -13,17 +13,43 @@ from p2pp.formatnumbers import hexify_float
 
 # SECTION PPLUS PING GCODE
 
+#acc_first_pause = """
+#;PING PAUSE 1 START
+#{}
+#G4 S0
+#G4 P4000
+#G1
+#G4 P4000
+#G1
+#G4 P4000
+#G1
+#G4 P1000
+#G1
+#;PING PAUSE 1 END
+#{}
+#G1 F{}
+#"""
+#acc_second_pause = """
+#;PING PAUSE 2 START
+#{}
+#G4 S0
+#G4 P4000
+#G1
+#G4 P3000
+#G1
+#{}
+#G1 F{}
+#;PING PAUSE 2 END"""
+
 acc_first_pause = """
 ;PING PAUSE 1 START
 {}
 G4 S0
-G4 P4000
+G4 P2500
 G1
-G4 P4000
+G4 P2000
 G1
-G4 P4000
-G1
-G4 P1000
+G4 P1500
 G1
 ;PING PAUSE 1 END
 {}
@@ -33,9 +59,9 @@ acc_second_pause = """
 ;PING PAUSE 2 START
 {}
 G4 S0
-G4 P4000
+G4 P2200
 G1
-G4 P3000
+G4 P1800
 G1
 {}
 G1 F{}
