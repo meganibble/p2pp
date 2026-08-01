@@ -1,9 +1,6 @@
 __author__ = 'Tom Van den Eede'
-__copyright__ = 'Copyright 2018-2022, Palette2-3 Splicer Post Processing Project'
-__credits__ = ['Tom Van den Eede',
-               'Tim Brookman',
-               'Christer Myrland',
-               ]
+__copyright__ = 'Copyright 2018-2026, Palette2-3 Splicer Post Processing Project'
+__credits__ = ['Tom Van den Eede', 'Tim Brookman', 'Christer Myrland']
 __license__ = 'GPLv3'
 __maintainer__ = 'Tom Van den Eede'
 __email__ = 'P2PP@pandora.be'
@@ -482,6 +479,11 @@ def parse_gcode_second_pass():
             gui.progress_string(50 + 50 * process_line_count // total_line_count)
 
         current_block_class = g[gcode.CLASS]
+
+        # Track PrusaSlicer's ;TYPE: feature marker so pings can avoid visible
+        # surfaces (a ping's retract/pause can leave a small blob on the shell).
+        if g[gcode.COMMENT] and ";TYPE:" in g[gcode.COMMENT]:
+            v.current_feature_type = g[gcode.COMMENT].split(";TYPE:", 1)[1].strip()
 
         # ---- FIRST SECTION HANDLES DELAYED TEMPERATURE COMMANDS ----
 
@@ -1157,6 +1159,17 @@ def p2pp_process_file(input_file, output_file):
             zipf.write(im_file, "thumbnail.png")
             zipf.close()
             os.remove(os.path.join(path, "print.gcode"))
+
+            # PrusaSlicer runs post-processors on a temporary <name>.gcode.pp
+            # copy and, by default, renames the result back to .gcode.  To have
+            # it saved as .mcfx instead we drop a sibling <tempfile>.output_name
+            # hint containing the desired output filename (single line).
+            try:
+                out_name = os.path.splitext(os.environ["SLIC3R_PP_OUTPUT_NAME"])[0] + ".mcfx"
+                with open(output_file + ".output_name", "w") as onf:
+                    onf.write(out_name)
+            except KeyError:
+                gui.log_warning("SLIC3R_PP_OUTPUT_NAME not set; output may keep .pp extension")
 
         os.remove(meta_file)
         os.remove(palette_file)

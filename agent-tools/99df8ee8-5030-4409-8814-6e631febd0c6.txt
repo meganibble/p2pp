@@ -1,0 +1,890 @@
+running build
+C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\setuptools\dist.py:332: InformationOnly: Normalizing '9.01.08' to '9.1.8'
+  self.metadata.version = self._normalize_version(self.metadata.version)
+running build_exe
+running egg_info
+creating p2pp.egg-info
+writing p2pp.egg-info\PKG-INFO
+writing dependency_links to p2pp.egg-info\dependency_links.txt
+writing top-level names to p2pp.egg-info\top_level.txt
+writing manifest file 'p2pp.egg-info\SOURCES.txt'
+reading manifest file 'p2pp.egg-info\SOURCES.txt'
+writing manifest file 'p2pp.egg-info\SOURCES.txt'
+C:\Users\AB21339\source\repos\private\p2pp\p2pp\variables.py:308: SyntaxWarning: invalid escape sequence '\s'
+  regex_p2pp = re.compile("^;\s*P2PP\s+([^=]+)=?(.*)$")
+C:\Users\AB21339\source\repos\private\p2pp\p2pp\psconfig.py:88: SyntaxWarning: invalid escape sequence '\d'
+  bedshape = re.compile("([+-]?\d+(\.\d*)?|\.\d+)")
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\freeze_core\legacy\win32gui-cpython-312-win_amd64.exe -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\p2pp.exe
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\python312.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\python312.dll
+copying C:\Users\AB21339\AppData\Local\Temp\cxfreeze-giwr5bdu\frozen_application_license.txt -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\frozen_application_license.txt
+Stamped: C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\p2pp.exe
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\python3.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\python3.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtCore.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\QtCore.pyd
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5Core.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5Core.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtGui.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\QtGui.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5Gui.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5Gui.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtNetwork.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\QtNetwork.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5Network.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5Network.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtPrintSupport.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\QtPrintSupport.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5PrintSupport.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5PrintSupport.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5Widgets.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5Widgets.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtWebChannel.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\QtWebChannel.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5WebChannel.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5WebChannel.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5Qml.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5Qml.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtWebEngineCore.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\QtWebEngineCore.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5WebEngineCore.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5WebEngineCore.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5Positioning.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5Positioning.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5Quick.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5Quick.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5QmlModels.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5QmlModels.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtWebEngineWidgets.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\QtWebEngineWidgets.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5WebEngineWidgets.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5WebEngineWidgets.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5QuickWidgets.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5QuickWidgets.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtWidgets.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\QtWidgets.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\sip.cp312-win_amd64.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\sip.cp312-win_amd64.pyd
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\uic
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\uic\Compiler
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\uic\Loader
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\uic\port_v2
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\uic\port_v3
+copying data from package certifi...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\certifi
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\certifi\cacert.pem -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\certifi\cacert.pem
+copying data from package charset_normalizer...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\charset_normalizer
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\cd.cp312-win_amd64.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\charset_normalizer\cd.cp312-win_amd64.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\md.cp312-win_amd64.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\charset_normalizer\md.cp312-win_amd64.pyd
+copying data from package collections...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\collections
+copying data from package config...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\config
+copying data from package email...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\email
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\architecture.rst -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\email\architecture.rst
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\email\mime
+copying data from package encodings...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\encodings
+copying data from package http...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\http
+copying data from package idna...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\idna
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\importlib
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\importlib\metadata
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\importlib\resources
+copying data from package json...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\json
+copying data from package logging...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\logging
+copying data from package p2pp...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\p2pp
+copying C:\Users\AB21339\source\repos\private\p2pp\p2pp\favicon.ico -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\p2pp\favicon.ico
+copying data from package re...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\re
+copying data from package requests...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests
+copying data from package requests.packages.urllib3...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests\packages\urllib3
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests\packages\urllib3\contrib
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests\packages\urllib3\contrib\emscripten
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\emscripten\emscripten_fetch_worker.js -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests\packages\urllib3\contrib\emscripten\emscripten_fetch_worker.js
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests\packages\urllib3\http2
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests\packages\urllib3\util
+copying data from package requests_toolbelt...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests_toolbelt
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests_toolbelt\adapters
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests_toolbelt\auth
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests_toolbelt\cookies
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests_toolbelt\downloadutils
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests_toolbelt\multipart
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests_toolbelt\threaded
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\requests_toolbelt\utils
+copying data from package urllib...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\urllib
+copying data from package urllib3...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\urllib3
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\urllib3\contrib
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\urllib3\contrib\emscripten
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\emscripten\emscripten_fetch_worker.js -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\urllib3\contrib\emscripten\emscripten_fetch_worker.js
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\urllib3\http2
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\urllib3\util
+copying data from package xml...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\xml
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\xml\dom
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\xml\etree
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\xml\parsers
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\xml\sax
+copying data from package zipfile...
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\zipfile
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\zipfile\_path
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\81d243bd2c585b0f4821__mypyc.cp312-win_amd64.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\81d243bd2c585b0f4821__mypyc.cp312-win_amd64.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_bz2.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\_bz2.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_decimal.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\_decimal.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_elementtree.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\_elementtree.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_hashlib.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\_hashlib.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\libcrypto-3.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\libcrypto-3.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_lzma.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\_lzma.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_queue.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\_queue.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_socket.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\_socket.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_ssl.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\_ssl.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\libssl-3.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\libssl-3.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_uuid.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\_uuid.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_wmi.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\_wmi.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\pyexpat.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\pyexpat.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\select.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\select.pyd
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\unicodedata.pyd -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\unicodedata.pyd
+copying C:\Users\AB21339\source\repos\private\p2pp\p2pp.ui -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\p2pp.ui
+copying C:\Users\AB21339\source\repos\private\p2pp\p2ppconf.ui -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\p2ppconf.ui
+copying C:\Users\AB21339\source\repos\private\p2pp\icons\icon.ico -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\icon.ico
+copying C:\Users\AB21339\source\repos\private\p2pp\SendError.ui -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\SendError.ui
+copying C:\Users\AB21339\source\repos\private\p2pp\p3browser.ui -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\p3browser.ui
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\zlib1.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\zlib1.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\qt.conf -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\qt.conf
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\styles
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\styles\qwindowsvistastyle.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\styles\qwindowsvistastyle.dll
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\platforms
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\platforms\qminimal.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\platforms\qminimal.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\platforms\qoffscreen.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\platforms\qoffscreen.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\platforms\qwebgl.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\platforms\qwebgl.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5WebSockets.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5WebSockets.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\platforms\qwindows.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\platforms\qwindows.dll
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\platformthemes
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\platformthemes\qxdgdesktopportal.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\platformthemes\qxdgdesktopportal.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5DBus.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5DBus.dll
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\generic
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\generic\qtuiotouchplugin.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\generic\qtuiotouchplugin.dll
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\iconengines
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\iconengines\qsvgicon.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\iconengines\qsvgicon.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5Svg.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5Svg.dll
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\imageformats
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\imageformats\qgif.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\imageformats\qgif.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\imageformats\qicns.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\imageformats\qicns.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\imageformats\qico.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\imageformats\qico.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\imageformats\qjpeg.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\imageformats\qjpeg.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\imageformats\qsvg.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\imageformats\qsvg.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\imageformats\qtga.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\imageformats\qtga.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\imageformats\qtiff.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\imageformats\qtiff.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\imageformats\qwbmp.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\imageformats\qwbmp.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\imageformats\qwebp.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\imageformats\qwebp.dll
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_ar.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_ar.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_bg.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_bg.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_ca.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_ca.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_cs.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_cs.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_da.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_da.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_de.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_de.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_en.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_en.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_es.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_es.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_fa.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_fa.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_fi.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_fi.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_fr.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_fr.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_gd.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_gd.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_gl.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_gl.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_he.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_he.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_hu.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_hu.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_it.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_it.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_ja.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_ja.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_ko.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_ko.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_lt.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_lt.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_lv.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_lv.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_pl.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_pl.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_pt.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_pt.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_ru.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_ru.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_sk.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_sk.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_sl.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_sl.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_sv.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_sv.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_tr.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_tr.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_uk.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_uk.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_zh_CN.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_zh_CN.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qt_zh_TW.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qt_zh_TW.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_ar.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_ar.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_bg.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_bg.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_ca.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_ca.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_cs.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_cs.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_da.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_da.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_de.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_de.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_en.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_en.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_es.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_es.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_fi.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_fi.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_fr.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_fr.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_gd.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_gd.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_he.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_he.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_hu.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_hu.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_it.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_it.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_ja.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_ja.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_ko.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_ko.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_lv.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_lv.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_pl.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_pl.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_ru.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_ru.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_sk.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_sk.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_tr.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_tr.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_uk.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_uk.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtbase_zh_TW.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtbase_zh_TW.qm
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\webview
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\webview\qtwebview_webengine.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\webview\qtwebview_webengine.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5WebEngine.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5WebEngine.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\Qt5WebView.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\Qt5WebView.dll
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\bearer
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\bearer\qgenericbearer.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\bearer\qgenericbearer.dll
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\printsupport
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\plugins\printsupport\windowsprintersupport.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\plugins\printsupport\windowsprintersupport.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\QtWebEngineProcess.exe -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\QtWebEngineProcess.exe
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\d3dcompiler_47.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\d3dcompiler_47.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\libEGL.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\libEGL.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\libGLESv2.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\libGLESv2.dll
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\bin\opengl32sw.dll -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\bin\opengl32sw.dll
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\resources
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\resources\icudtl.dat -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\resources\icudtl.dat
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\resources\qtwebengine_devtools_resources.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\resources\qtwebengine_devtools_resources.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\resources\qtwebengine_resources.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\resources\qtwebengine_resources.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\resources\qtwebengine_resources_100p.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\resources\qtwebengine_resources_100p.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\resources\qtwebengine_resources_200p.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\resources\qtwebengine_resources_200p.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_ca.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_ca.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_de.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_de.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_en.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_en.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_es.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_es.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_ko.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_ko.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_pl.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_pl.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_ru.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_ru.qm
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_uk.qm -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_uk.qm
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\am.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\am.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\ar.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\ar.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\bg.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\bg.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\bn.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\bn.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\ca.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\ca.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\cs.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\cs.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\da.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\da.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\de.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\de.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\el.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\el.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\en-GB.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\en-GB.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\en-US.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\en-US.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\es-419.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\es-419.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\es.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\es.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\et.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\et.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\fa.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\fa.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\fi.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\fi.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\fil.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\fil.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\fr.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\fr.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\gu.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\gu.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\he.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\he.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\hi.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\hi.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\hr.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\hr.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\hu.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\hu.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\id.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\id.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\it.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\it.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\ja.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\ja.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\kn.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\kn.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\ko.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\ko.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\lt.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\lt.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\lv.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\lv.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\ml.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\ml.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\mr.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\mr.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\ms.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\ms.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\nb.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\nb.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\nl.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\nl.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\pl.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\pl.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\pt-BR.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\pt-BR.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\pt-PT.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\pt-PT.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\ro.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\ro.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\ru.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\ru.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\sk.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\sk.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\sl.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\sl.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\sr.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\sr.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\sv.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\sv.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\sw.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\sw.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\ta.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\ta.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\te.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\te.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\th.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\th.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\tr.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\tr.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\uk.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\uk.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\vi.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\vi.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\zh-CN.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\zh-CN.pak
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt5\translations\qtwebengine_locales\zh-TW.pak -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\PyQt5\Qt5\translations\qtwebengine_locales\zh-TW.pak
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\widget-plugins\qaxcontainer.py -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\qaxcontainer.py
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\widget-plugins\qscintilla.py -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\qscintilla.py
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\widget-plugins\qtcharts.py -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\qtcharts.py
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\widget-plugins\qtprintsupport.py -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\qtprintsupport.py
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\widget-plugins\qtquickwidgets.py -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\qtquickwidgets.py
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\widget-plugins\qtwebenginewidgets.py -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\qtwebenginewidgets.py
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\widget-plugins\qtwebkit.py -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\qtwebkit.py
+creating directory C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\__pycache__
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\widget-plugins\__pycache__\qaxcontainer.cpython-312.pyc -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\__pycache__\qaxcontainer.cpython-312.pyc
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\widget-plugins\__pycache__\qscintilla.cpython-312.pyc -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\__pycache__\qscintilla.cpython-312.pyc
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\widget-plugins\__pycache__\qtcharts.cpython-312.pyc -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\__pycache__\qtcharts.cpython-312.pyc
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\widget-plugins\__pycache__\qtprintsupport.cpython-312.pyc -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\__pycache__\qtprintsupport.cpython-312.pyc
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\widget-plugins\__pycache__\qtquickwidgets.cpython-312.pyc -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\__pycache__\qtquickwidgets.cpython-312.pyc
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\widget-plugins\__pycache__\qtwebenginewidgets.cpython-312.pyc -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\__pycache__\qtwebenginewidgets.cpython-312.pyc
+copying C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\widget-plugins\__pycache__\qtwebkit.cpython-312.pyc -> C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\PyQt5.uic.widget-plugins\__pycache__\qtwebkit.cpython-312.pyc
+writing zip file C:\Users\AB21339\source\repos\private\p2pp\build\exe.win-amd64-3.12\lib\library.zip
+
+  Name                      File
+  ----                      ----
+m 81d243bd2c585b0f4821__mypyc C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\81d243bd2c585b0f4821__mypyc.cp312-win_amd64.pyd
+m BUILD_CONSTANTS           C:\Users\AB21339\AppData\Local\Temp\cxfreeze-giwr5bdu\BUILD_CONSTANTS.py
+P PyQt5                     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\__init__.py
+m PyQt5.Qt                  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\Qt.pyd
+m PyQt5.QtCore              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtCore.pyd
+m PyQt5.QtGui               C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtGui.pyd
+m PyQt5.QtNetwork           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtNetwork.pyd
+m PyQt5.QtPrintSupport      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtPrintSupport.pyd
+m PyQt5.QtWebChannel        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtWebChannel.pyd
+m PyQt5.QtWebEngineCore     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtWebEngineCore.pyd
+m PyQt5.QtWebEngineWidgets  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtWebEngineWidgets.pyd
+m PyQt5.QtWidgets           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\QtWidgets.pyd
+m PyQt5._cx_freeze_debug    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\cx_Freeze\hooks\_pyqt5_\_debug.py
+m PyQt5.sip                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\sip.cp312-win_amd64.pyd
+P PyQt5.uic                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\__init__.py
+P PyQt5.uic.Compiler        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\Compiler\__init__.py
+m PyQt5.uic.Compiler.compiler C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\Compiler\compiler.py
+m PyQt5.uic.Compiler.indenter C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\Compiler\indenter.py
+m PyQt5.uic.Compiler.misc   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\Compiler\misc.py
+m PyQt5.uic.Compiler.proxy_metaclass C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\Compiler\proxy_metaclass.py
+m PyQt5.uic.Compiler.qobjectcreator C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\Compiler\qobjectcreator.py
+m PyQt5.uic.Compiler.qtproxies C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\Compiler\qtproxies.py
+P PyQt5.uic.Loader          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\Loader\__init__.py
+m PyQt5.uic.Loader.loader   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\Loader\loader.py
+m PyQt5.uic.Loader.qobjectcreator C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\Loader\qobjectcreator.py
+m PyQt5.uic.exceptions      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\exceptions.py
+m PyQt5.uic.icon_cache      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\icon_cache.py
+m PyQt5.uic.objcreator      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\objcreator.py
+P PyQt5.uic.port_v2         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\port_v2\__init__.py
+m PyQt5.uic.port_v2.as_string C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\port_v2\as_string.py
+m PyQt5.uic.port_v2.ascii_upper C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\port_v2\ascii_upper.py
+m PyQt5.uic.port_v2.proxy_base C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\port_v2\proxy_base.py
+m PyQt5.uic.port_v2.string_io C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\port_v2\string_io.py
+P PyQt5.uic.port_v3         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\port_v3\__init__.py
+m PyQt5.uic.port_v3.as_string C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\port_v3\as_string.py
+m PyQt5.uic.port_v3.ascii_upper C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\port_v3\ascii_upper.py
+m PyQt5.uic.port_v3.proxy_base C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\port_v3\proxy_base.py
+m PyQt5.uic.port_v3.string_io C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\port_v3\string_io.py
+m PyQt5.uic.properties      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\properties.py
+m PyQt5.uic.uiparser        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\PyQt5\uic\uiparser.py
+m __future__                C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\__future__.py
+m __init__p2pp              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\freeze_core\initscripts\console.py
+m __main__p2pp              p2pp.py
+m __startup__               C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\freeze_core\initscripts\__startup__.py
+m _abc                      
+m _ast                      
+m _bisect                   
+m _blake2                   
+m _bz2                      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_bz2.pyd
+m _codecs                   
+m _codecs_cn                
+m _codecs_hk                
+m _codecs_iso2022           
+m _codecs_jp                
+m _codecs_kr                
+m _codecs_tw                
+m _collections              
+m _collections_abc          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\_collections_abc.py
+m _compat_pickle            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\_compat_pickle.py
+m _compression              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\_compression.py
+m _csv                      
+m _datetime                 
+m _decimal                  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_decimal.pyd
+m _elementtree              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_elementtree.pyd
+m _functools                
+m _hashlib                  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_hashlib.pyd
+m _heapq                    
+m _imp                      
+m _io                       
+m _json                     
+m _locale                   
+m _lzma                     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_lzma.pyd
+m _md5                      
+m _multibytecodec           
+m _opcode                   
+m _operator                 
+m _pickle                   
+m _queue                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_queue.pyd
+m _random                   
+m _sha1                     
+m _sha2                     
+m _sha3                     
+m _signal                   
+m _socket                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_socket.pyd
+m _sre                      
+m _ssl                      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_ssl.pyd
+m _stat                     
+m _statistics               
+m _string                   
+m _strptime                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\_strptime.py
+m _struct                   
+m _thread                   
+m _threading_local          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\_threading_local.py
+m _tokenize                 
+m _tracemalloc              
+m _typing                   
+m _uuid                     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_uuid.pyd
+m _warnings                 
+m _weakref                  
+m _weakrefset               C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\_weakrefset.py
+m _winapi                   
+m _wmi                      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\_wmi.pyd
+m abc                       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\abc.py
+m argparse                  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\argparse.py
+m array                     
+m ast                       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\ast.py
+m atexit                    
+m base64                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\base64.py
+m binascii                  
+m bisect                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\bisect.py
+m builtins                  
+m bz2                       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\bz2.py
+m calendar                  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\calendar.py
+P certifi                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\certifi\__init__.py
+m certifi.core              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\certifi\core.py
+P charset_normalizer        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\__init__.py
+m charset_normalizer.api    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\api.py
+m charset_normalizer.cd     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\cd.cp312-win_amd64.pyd
+m charset_normalizer.constant C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\constant.py
+m charset_normalizer.legacy C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\legacy.py
+m charset_normalizer.md     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\md.cp312-win_amd64.pyd
+m charset_normalizer.models C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\models.py
+m charset_normalizer.utils  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\utils.py
+m charset_normalizer.version C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\charset_normalizer\version.py
+m codecs                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\codecs.py
+P collections               C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\collections\__init__.py
+m collections.abc           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\collections\abc.py
+P config                    C:\Users\AB21339\source\repos\private\p2pp\config\__init__.py
+m config.config_gui         C:\Users\AB21339\source\repos\private\p2pp\config\config_gui.py
+m config.prusaconfig        C:\Users\AB21339\source\repos\private\p2pp\config\prusaconfig.py
+m config.qdroptarget        C:\Users\AB21339\source\repos\private\p2pp\config\qdroptarget.py
+m config.qmulticombo        C:\Users\AB21339\source\repos\private\p2pp\config\qmulticombo.py
+m configparser              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\configparser.py
+m contextlib                C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\contextlib.py
+m copy                      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\copy.py
+m copyreg                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\copyreg.py
+m csv                       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\csv.py
+m dataclasses               C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py
+m datetime                  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\datetime.py
+m decimal                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\decimal.py
+m dis                       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\dis.py
+P email                     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\__init__.py
+m email._encoded_words      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\_encoded_words.py
+m email._header_value_parser C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\_header_value_parser.py
+m email._parseaddr          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\_parseaddr.py
+m email._policybase         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\_policybase.py
+m email.base64mime          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\base64mime.py
+m email.charset             C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\charset.py
+m email.contentmanager      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\contentmanager.py
+m email.encoders            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\encoders.py
+m email.errors              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\errors.py
+m email.feedparser          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\feedparser.py
+m email.generator           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\generator.py
+m email.header              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\header.py
+m email.headerregistry      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\headerregistry.py
+m email.iterators           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\iterators.py
+m email.message             C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\message.py
+m email.parser              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\parser.py
+m email.policy              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\policy.py
+m email.quoprimime          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\quoprimime.py
+m email.utils               C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\email\utils.py
+P encodings                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\__init__.py
+m encodings.aliases         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\aliases.py
+m encodings.ascii           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\ascii.py
+m encodings.base64_codec    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\base64_codec.py
+m encodings.big5            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\big5.py
+m encodings.big5hkscs       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\big5hkscs.py
+m encodings.bz2_codec       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\bz2_codec.py
+m encodings.charmap         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\charmap.py
+m encodings.cp037           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp037.py
+m encodings.cp1006          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1006.py
+m encodings.cp1026          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1026.py
+m encodings.cp1125          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1125.py
+m encodings.cp1140          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1140.py
+m encodings.cp1250          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1250.py
+m encodings.cp1251          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1251.py
+m encodings.cp1252          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1252.py
+m encodings.cp1253          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1253.py
+m encodings.cp1254          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1254.py
+m encodings.cp1255          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1255.py
+m encodings.cp1256          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1256.py
+m encodings.cp1257          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1257.py
+m encodings.cp1258          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp1258.py
+m encodings.cp273           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp273.py
+m encodings.cp424           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp424.py
+m encodings.cp437           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp437.py
+m encodings.cp500           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp500.py
+m encodings.cp720           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp720.py
+m encodings.cp737           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp737.py
+m encodings.cp775           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp775.py
+m encodings.cp850           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp850.py
+m encodings.cp852           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp852.py
+m encodings.cp855           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp855.py
+m encodings.cp856           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp856.py
+m encodings.cp857           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp857.py
+m encodings.cp858           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp858.py
+m encodings.cp860           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp860.py
+m encodings.cp861           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp861.py
+m encodings.cp862           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp862.py
+m encodings.cp863           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp863.py
+m encodings.cp864           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp864.py
+m encodings.cp865           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp865.py
+m encodings.cp866           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp866.py
+m encodings.cp869           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp869.py
+m encodings.cp874           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp874.py
+m encodings.cp875           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp875.py
+m encodings.cp932           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp932.py
+m encodings.cp949           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp949.py
+m encodings.cp950           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\cp950.py
+m encodings.euc_jis_2004    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\euc_jis_2004.py
+m encodings.euc_jisx0213    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\euc_jisx0213.py
+m encodings.euc_jp          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\euc_jp.py
+m encodings.euc_kr          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\euc_kr.py
+m encodings.gb18030         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\gb18030.py
+m encodings.gb2312          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\gb2312.py
+m encodings.gbk             C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\gbk.py
+m encodings.hex_codec       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\hex_codec.py
+m encodings.hp_roman8       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\hp_roman8.py
+m encodings.hz              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\hz.py
+m encodings.idna            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\idna.py
+m encodings.iso2022_jp      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso2022_jp.py
+m encodings.iso2022_jp_1    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso2022_jp_1.py
+m encodings.iso2022_jp_2    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso2022_jp_2.py
+m encodings.iso2022_jp_2004 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso2022_jp_2004.py
+m encodings.iso2022_jp_3    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso2022_jp_3.py
+m encodings.iso2022_jp_ext  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso2022_jp_ext.py
+m encodings.iso2022_kr      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso2022_kr.py
+m encodings.iso8859_1       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_1.py
+m encodings.iso8859_10      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_10.py
+m encodings.iso8859_11      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_11.py
+m encodings.iso8859_13      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_13.py
+m encodings.iso8859_14      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_14.py
+m encodings.iso8859_15      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_15.py
+m encodings.iso8859_16      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_16.py
+m encodings.iso8859_2       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_2.py
+m encodings.iso8859_3       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_3.py
+m encodings.iso8859_4       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_4.py
+m encodings.iso8859_5       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_5.py
+m encodings.iso8859_6       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_6.py
+m encodings.iso8859_7       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_7.py
+m encodings.iso8859_8       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_8.py
+m encodings.iso8859_9       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\iso8859_9.py
+m encodings.johab           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\johab.py
+m encodings.koi8_r          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\koi8_r.py
+m encodings.koi8_t          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\koi8_t.py
+m encodings.koi8_u          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\koi8_u.py
+m encodings.kz1048          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\kz1048.py
+m encodings.latin_1         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\latin_1.py
+m encodings.mac_arabic      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\mac_arabic.py
+m encodings.mac_croatian    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\mac_croatian.py
+m encodings.mac_cyrillic    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\mac_cyrillic.py
+m encodings.mac_farsi       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\mac_farsi.py
+m encodings.mac_greek       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\mac_greek.py
+m encodings.mac_iceland     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\mac_iceland.py
+m encodings.mac_latin2      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\mac_latin2.py
+m encodings.mac_roman       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\mac_roman.py
+m encodings.mac_romanian    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\mac_romanian.py
+m encodings.mac_turkish     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\mac_turkish.py
+m encodings.mbcs            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\mbcs.py
+m encodings.oem             C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\oem.py
+m encodings.palmos          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\palmos.py
+m encodings.ptcp154         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\ptcp154.py
+m encodings.punycode        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\punycode.py
+m encodings.quopri_codec    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\quopri_codec.py
+m encodings.raw_unicode_escape C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\raw_unicode_escape.py
+m encodings.rot_13          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\rot_13.py
+m encodings.shift_jis       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\shift_jis.py
+m encodings.shift_jis_2004  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\shift_jis_2004.py
+m encodings.shift_jisx0213  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\shift_jisx0213.py
+m encodings.tis_620         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\tis_620.py
+m encodings.undefined       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\undefined.py
+m encodings.unicode_escape  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\unicode_escape.py
+m encodings.utf_16          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\utf_16.py
+m encodings.utf_16_be       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\utf_16_be.py
+m encodings.utf_16_le       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\utf_16_le.py
+m encodings.utf_32          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\utf_32.py
+m encodings.utf_32_be       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\utf_32_be.py
+m encodings.utf_32_le       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\utf_32_le.py
+m encodings.utf_7           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\utf_7.py
+m encodings.utf_8           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\utf_8.py
+m encodings.utf_8_sig       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\utf_8_sig.py
+m encodings.uu_codec        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\uu_codec.py
+m encodings.zlib_codec      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\encodings\zlib_codec.py
+m enum                      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\enum.py
+m errno                     
+m fnmatch                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\fnmatch.py
+m fractions                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\fractions.py
+m ftplib                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\ftplib.py
+m functools                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\functools.py
+m gc                        
+m genericpath               C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\genericpath.py
+m getopt                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\getopt.py
+m getpass                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\getpass.py
+m gettext                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\gettext.py
+m gzip                      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\gzip.py
+m hashlib                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\hashlib.py
+m heapq                     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\heapq.py
+m hmac                      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\hmac.py
+P http                      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\http\__init__.py
+m http.client               C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\http\client.py
+m http.cookiejar            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\http\cookiejar.py
+m http.cookies              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\http\cookies.py
+P idna                      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\__init__.py
+m idna.core                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\core.py
+m idna.idnadata             C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\idnadata.py
+m idna.intranges            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\intranges.py
+m idna.package_data         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\package_data.py
+m idna.uts46data            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\idna\uts46data.py
+m image_rc                  C:\Users\AB21339\source\repos\private\p2pp\image_rc.py
+P importlib                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\__init__.py
+m importlib._abc            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\_abc.py
+m importlib.abc             C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\abc.py
+m importlib.machinery       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\machinery.py
+P importlib.metadata        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py
+m importlib.metadata._adapters C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\_adapters.py
+m importlib.metadata._collections C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\_collections.py
+m importlib.metadata._functools C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\_functools.py
+m importlib.metadata._itertools C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\_itertools.py
+m importlib.metadata._meta  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\_meta.py
+m importlib.metadata._text  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\_text.py
+m importlib.readers         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\readers.py
+P importlib.resources       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\__init__.py
+m importlib.resources._adapters C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_adapters.py
+m importlib.resources._common C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_common.py
+m importlib.resources._itertools C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_itertools.py
+m importlib.resources._legacy C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\_legacy.py
+m importlib.resources.abc   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\abc.py
+m importlib.resources.readers C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\resources\readers.py
+m importlib.util            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\importlib\util.py
+m inspect                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\inspect.py
+m io                        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\io.py
+m ipaddress                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\ipaddress.py
+m itertools                 
+P json                      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\json\__init__.py
+m json.decoder              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\json\decoder.py
+m json.encoder              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\json\encoder.py
+m json.scanner              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\json\scanner.py
+m keyword                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\keyword.py
+m linecache                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\linecache.py
+m locale                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\locale.py
+P logging                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py
+m lzma                      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\lzma.py
+m marshal                   
+m math                      
+m mimetypes                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\mimetypes.py
+m msvcrt                    
+m netrc                     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\netrc.py
+m nt                        
+m ntpath                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\ntpath.py
+m nturl2path                C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\nturl2path.py
+m numbers                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\numbers.py
+m opcode                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\opcode.py
+m operator                  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\operator.py
+m os                        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\os.py
+P p2pp                      C:\Users\AB21339\source\repos\private\p2pp\p2pp\__init__.py
+m p2pp.bedprojection        C:\Users\AB21339\source\repos\private\p2pp\p2pp\bedprojection.py
+m p2pp.checkversion         C:\Users\AB21339\source\repos\private\p2pp\p2pp\checkversion.py
+m p2pp.colornames           C:\Users\AB21339\source\repos\private\p2pp\p2pp\colornames.py
+m p2pp.formatnumbers        C:\Users\AB21339\source\repos\private\p2pp\p2pp\formatnumbers.py
+m p2pp.gcode                C:\Users\AB21339\source\repos\private\p2pp\p2pp\gcode.py
+m p2pp.genpreview           C:\Users\AB21339\source\repos\private\p2pp\p2pp\genpreview.py
+m p2pp.gui                  C:\Users\AB21339\source\repos\private\p2pp\p2pp\gui.py
+m p2pp.manualswap           C:\Users\AB21339\source\repos\private\p2pp\p2pp\manualswap.py
+m p2pp.mcf                  C:\Users\AB21339\source\repos\private\p2pp\p2pp\mcf.py
+m p2pp.omega                C:\Users\AB21339\source\repos\private\p2pp\p2pp\omega.py
+m p2pp.p2ppparams           C:\Users\AB21339\source\repos\private\p2pp\p2pp\p2ppparams.py
+m p2pp.p3_upload            C:\Users\AB21339\source\repos\private\p2pp\p2pp\p3_upload.py
+m p2pp.pings                C:\Users\AB21339\source\repos\private\p2pp\p2pp\pings.py
+m p2pp.psconfig             C:\Users\AB21339\source\repos\private\p2pp\p2pp\psconfig.py
+m p2pp.purgetower           C:\Users\AB21339\source\repos\private\p2pp\p2pp\purgetower.py
+m p2pp.sidewipe             C:\Users\AB21339\source\repos\private\p2pp\p2pp\sidewipe.py
+m p2pp.variables            C:\Users\AB21339\source\repos\private\p2pp\p2pp\variables.py
+m pathlib                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\pathlib.py
+m pickle                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\pickle.py
+m pkgutil                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\pkgutil.py
+m platform                  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\platform.py
+m posixpath                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\posixpath.py
+m pprint                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\pprint.py
+m py_compile                C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\py_compile.py
+m pyexpat                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\pyexpat.pyd
+m queue                     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\queue.py
+m quopri                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\quopri.py
+m random                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\random.py
+P re                        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\re\__init__.py
+m re._casefix               C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\re\_casefix.py
+m re._compiler              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\re\_compiler.py
+m re._constants             C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\re\_constants.py
+m re._parser                C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\re\_parser.py
+m reprlib                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\reprlib.py
+P requests                  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\__init__.py
+m requests.__version__      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\__version__.py
+m requests._internal_utils  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\_internal_utils.py
+m requests._types           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\_types.py
+m requests.adapters         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py
+m requests.api              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py
+m requests.auth             C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\auth.py
+m requests.certs            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\certs.py
+m requests.compat           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\compat.py
+m requests.cookies          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\cookies.py
+m requests.exceptions       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\exceptions.py
+m requests.hooks            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\hooks.py
+m requests.models           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\models.py
+m requests.packages         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\packages.py
+P requests.packages.urllib3 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\__init__.py
+m requests.packages.urllib3._base_connection C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_base_connection.py
+m requests.packages.urllib3._collections C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_collections.py
+m requests.packages.urllib3._request_methods C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_request_methods.py
+m requests.packages.urllib3._version C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_version.py
+m requests.packages.urllib3.connection C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py
+m requests.packages.urllib3.connectionpool C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py
+P requests.packages.urllib3.contrib C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\__init__.py
+P requests.packages.urllib3.contrib.emscripten C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\emscripten\__init__.py
+m requests.packages.urllib3.contrib.emscripten.connection C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\emscripten\connection.py
+m requests.packages.urllib3.contrib.emscripten.fetch C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\emscripten\fetch.py
+m requests.packages.urllib3.contrib.emscripten.request C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\emscripten\request.py
+m requests.packages.urllib3.contrib.emscripten.response C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\emscripten\response.py
+m requests.packages.urllib3.exceptions C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\exceptions.py
+m requests.packages.urllib3.fields C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\fields.py
+m requests.packages.urllib3.filepost C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\filepost.py
+P requests.packages.urllib3.http2 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\http2\__init__.py
+m requests.packages.urllib3.http2.connection C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\http2\connection.py
+m requests.packages.urllib3.http2.probe C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\http2\probe.py
+m requests.packages.urllib3.poolmanager C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\poolmanager.py
+m requests.packages.urllib3.response C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\response.py
+P requests.packages.urllib3.util C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\__init__.py
+m requests.packages.urllib3.util.connection C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py
+m requests.packages.urllib3.util.proxy C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\proxy.py
+m requests.packages.urllib3.util.request C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\request.py
+m requests.packages.urllib3.util.response C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\response.py
+m requests.packages.urllib3.util.retry C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py
+m requests.packages.urllib3.util.ssl_ C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\ssl_.py
+m requests.packages.urllib3.util.ssl_match_hostname C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\ssl_match_hostname.py
+m requests.packages.urllib3.util.ssltransport C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\ssltransport.py
+m requests.packages.urllib3.util.timeout C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\timeout.py
+m requests.packages.urllib3.util.url C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\url.py
+m requests.packages.urllib3.util.util C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\util.py
+m requests.packages.urllib3.util.wait C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\wait.py
+m requests.sessions         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py
+m requests.status_codes     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\status_codes.py
+m requests.structures       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\structures.py
+m requests.utils            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\utils.py
+P requests_toolbelt         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\__init__.py
+m requests_toolbelt._compat C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\_compat.py
+P requests_toolbelt.adapters C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\adapters\__init__.py
+m requests_toolbelt.adapters.source C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\adapters\source.py
+m requests_toolbelt.adapters.ssl C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\adapters\ssl.py
+P requests_toolbelt.auth    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\auth\__init__.py
+m requests_toolbelt.auth._digest_auth_compat C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\auth\_digest_auth_compat.py
+m requests_toolbelt.auth.guess C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\auth\guess.py
+m requests_toolbelt.auth.http_proxy_digest C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\auth\http_proxy_digest.py
+P requests_toolbelt.multipart C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\multipart\__init__.py
+m requests_toolbelt.multipart.decoder C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\multipart\decoder.py
+m requests_toolbelt.multipart.encoder C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\multipart\encoder.py
+m requests_toolbelt.streaming_iterator C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\streaming_iterator.py
+P requests_toolbelt.utils   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\utils\__init__.py
+m requests_toolbelt.utils.user_agent C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests_toolbelt\utils\user_agent.py
+m select                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\select.pyd
+m selectors                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\selectors.py
+m shutil                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\shutil.py
+m signal                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\signal.py
+m socket                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\socket.py
+m ssl                       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\ssl.py
+m stat                      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\stat.py
+m statistics                C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\statistics.py
+m string                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\string.py
+m stringprep                C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\stringprep.py
+m struct                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\struct.py
+m subprocess                C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\subprocess.py
+m sys                       
+m tarfile                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\tarfile.py
+m tempfile                  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\tempfile.py
+m textwrap                  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\textwrap.py
+m threading                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\threading.py
+m time                      
+m token                     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\token.py
+m tokenize                  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\tokenize.py
+m traceback                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\traceback.py
+m tracemalloc               C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\tracemalloc.py
+m types                     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\types.py
+m typing                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\typing.py
+m unicodedata               C:\Users\AB21339\AppData\Local\Programs\Python\Python312\DLLs\unicodedata.pyd
+P urllib                    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\urllib\__init__.py
+m urllib.error              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\urllib\error.py
+m urllib.parse              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\urllib\parse.py
+m urllib.request            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py
+m urllib.response           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\urllib\response.py
+P urllib3                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\__init__.py
+m urllib3._base_connection  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_base_connection.py
+m urllib3._collections      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_collections.py
+m urllib3._request_methods  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_request_methods.py
+m urllib3._version          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\_version.py
+m urllib3.connection        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py
+m urllib3.connectionpool    C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py
+P urllib3.contrib           C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\__init__.py
+P urllib3.contrib.emscripten C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\emscripten\__init__.py
+m urllib3.contrib.emscripten.connection C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\emscripten\connection.py
+m urllib3.contrib.emscripten.fetch C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\emscripten\fetch.py
+m urllib3.contrib.emscripten.request C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\emscripten\request.py
+m urllib3.contrib.emscripten.response C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\emscripten\response.py
+m urllib3.contrib.pyopenssl C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\pyopenssl.py
+m urllib3.contrib.socks     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\contrib\socks.py
+m urllib3.exceptions        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\exceptions.py
+m urllib3.fields            C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\fields.py
+m urllib3.filepost          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\filepost.py
+P urllib3.http2             C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\http2\__init__.py
+m urllib3.http2.connection  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\http2\connection.py
+m urllib3.http2.probe       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\http2\probe.py
+m urllib3.poolmanager       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\poolmanager.py
+m urllib3.response          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\response.py
+P urllib3.util              C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\__init__.py
+m urllib3.util.connection   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\connection.py
+m urllib3.util.proxy        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\proxy.py
+m urllib3.util.request      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\request.py
+m urllib3.util.response     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\response.py
+m urllib3.util.retry        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py
+m urllib3.util.ssl_         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\ssl_.py
+m urllib3.util.ssl_match_hostname C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\ssl_match_hostname.py
+m urllib3.util.ssltransport C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\ssltransport.py
+m urllib3.util.timeout      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\timeout.py
+m urllib3.util.url          C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\url.py
+m urllib3.util.util         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\util.py
+m urllib3.util.wait         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\wait.py
+m uuid                      C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\uuid.py
+m version                   C:\Users\AB21339\source\repos\private\p2pp\version.py
+m warnings                  C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\warnings.py
+m weakref                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\weakref.py
+m winreg                    
+P xml                       C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\xml\__init__.py
+P xml.etree                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\xml\etree\__init__.py
+m xml.etree.ElementPath     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\xml\etree\ElementPath.py
+m xml.etree.ElementTree     C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\xml\etree\ElementTree.py
+P xml.parsers               C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\xml\parsers\__init__.py
+m xml.parsers.expat         C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\xml\parsers\expat.py
+P zipfile                   C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py
+P zipfile._path             C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\zipfile\_path\__init__.py
+m zipfile._path.glob        C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\zipfile\_path\glob.py
+m zipimport                 C:\Users\AB21339\AppData\Local\Programs\Python\Python312\Lib\zipimport.py
+m zlib                      
+Missing modules:
+? OpenSSL.SSL imported from urllib3.contrib.pyopenssl
+? OpenSSL.crypto imported from urllib3.contrib.pyopenssl
+? backports imported from requests.packages.urllib3.response, requests.packages.urllib3.util.request, urllib3.response, urllib3.util.request
+? brotli imported from requests.packages.urllib3.response, requests.packages.urllib3.util.request, urllib3.response, urllib3.util.request
+? brotlicffi imported from requests.packages.urllib3.response, requests.packages.urllib3.util.request, urllib3.response, urllib3.util.request
+? chardet imported from requests
+? cryptography imported from requests, urllib3.contrib.pyopenssl
+? cryptography.x509 imported from urllib3.contrib.pyopenssl
+? cryptography.x509.extensions imported from urllib3.contrib.pyopenssl
+? h2.config imported from requests.packages.urllib3.http2.connection, urllib3.http2.connection
+? h2.connection imported from requests.packages.urllib3.http2.connection, urllib3.http2.connection
+? h2.events imported from requests.packages.urllib3.http2.connection, urllib3.http2.connection
+? js imported from requests.packages.urllib3.contrib.emscripten.fetch, urllib3.contrib.emscripten.fetch
+? package imported from requests.packages
+? pyodide.ffi imported from requests.packages.urllib3.contrib.emscripten.fetch, urllib3.contrib.emscripten.fetch
+? simplejson imported from requests.compat
+? socks imported from urllib3.contrib.socks
+This is not necessarily a problem - the modules may not be needed on this platform.
+
+Missing dependencies:
+? WINSPOOL.DRV
+? api-ms-win-core-path-l1-1-0.dll
+? bthprops.cpl
+This is not necessarily a problem - the dependencies may not be needed on this platform.
+

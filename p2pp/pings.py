@@ -1,8 +1,6 @@
 __author__ = 'Tom Van den Eede'
-__copyright__ = 'Copyright 2018-2022, Palette2 Splicer Post Processing Project'
-__credits__ = ['Tom Van den Eede',
-               'Tim Brookman'
-               ]
+__copyright__ = 'Copyright 2018-2026, Palette2-3 Splicer Post Processing Project'
+__credits__ = ['Tom Van den Eede', 'Tim Brookman', 'Christer Myrland']
 __license__ = 'GPLv3'
 __maintainer__ = 'Tom Van den Eede'
 __email__ = 'P2PP@pandora.be'
@@ -13,43 +11,17 @@ from p2pp.formatnumbers import hexify_float
 
 # SECTION PPLUS PING GCODE
 
-#acc_first_pause = """
-#;PING PAUSE 1 START
-#{}
-#G4 S0
-#G4 P4000
-#G1
-#G4 P4000
-#G1
-#G4 P4000
-#G1
-#G4 P1000
-#G1
-#;PING PAUSE 1 END
-#{}
-#G1 F{}
-#"""
-#acc_second_pause = """
-#;PING PAUSE 2 START
-#{}
-#G4 S0
-#G4 P4000
-#G1
-#G4 P3000
-#G1
-#{}
-#G1 F{}
-#;PING PAUSE 2 END"""
-
 acc_first_pause = """
 ;PING PAUSE 1 START
 {}
 G4 S0
-G4 P2500
+G4 P4000
 G1
-G4 P2000
+G4 P4000
 G1
-G4 P1500
+G4 P4000
+G1
+G4 P1000
 G1
 ;PING PAUSE 1 END
 {}
@@ -59,18 +31,51 @@ acc_second_pause = """
 ;PING PAUSE 2 START
 {}
 G4 S0
-G4 P2200
+G4 P4000
 G1
-G4 P1800
+G4 P3000
 G1
 {}
 G1 F{}
 ;PING PAUSE 2 END"""
 
+#acc_first_pause = """
+#;PING PAUSE 1 START
+#{}
+#G4 S0
+#G4 P2500
+#G1
+#G4 P2000
+#G1
+#G4 P1500
+#G1
+#;PING PAUSE 1 END
+#{}
+#G1 F{}
+#"""
+#acc_second_pause = """
+#PING PAUSE 2 START
+#{}
+#G4 S0
+#G4 P2200
+#G1
+#G4 P1800
+#G1
+#{}
+#G1 F{}
+#;PING PAUSE 2 END"""
+
 
 # SECTION PING chk ACC/CONN
 
 def check_first_ping_condition():
+    # Never START a ping on a visible/cosmetic surface -- defer it.  The
+    # extrusion counter is NOT reset while deferred (the reset lives inside the
+    # caller's `if check_first_ping_condition()` block), so the ping simply
+    # fires at the next infill / inner-wall / wipe-tower move instead of
+    # blobbing the outer shell.
+    if v.avoid_ping_on_visible and v.current_feature_type in v.ping_avoid_feature_types:
+        return False
     return (v.total_material_extruded - v.last_ping_extruder_position) > (v.ping_interval-19.0)
 
 
@@ -85,6 +90,17 @@ def check_connected_ping():
         gcode.issue_code(
             "; --- P2PP - INSERT PING CODE {} after {:-10.4f}mm of extrusion".format(len(v.ping_extruder_position),
                                                                                      v.last_ping_extruder_position))
+
+        # With FINISH_MOVES_M400 the M400 sync plus the Palette's post-ping M105
+        # polling leave the nozzle idle ~2s -- retract to stop it oozing.  Must
+        # come BEFORE the M400 so it executes as the buffer drains (i.e. right
+        # before the idle).  E is net-zero (retract now, unretract after the
+        # ping), so total_material_extruded / splice accounting is unaffected.
+        pingretract = v.finish_moves == "M400"
+        if pingretract:
+            rt, urt = get_ping_retract_code()
+            gcode.issue_code(rt)
+
         # wait for the planning buffer to clear
         gcode.issue_code(v.finish_moves)
 
@@ -99,6 +115,19 @@ def check_connected_ping():
                 gcode.issue_code("O31 L{:.2f} mm".format(v.last_ping_extruder_position + v.autoloadingoffset))
         else:
             gcode.issue_code("O31 {}".format(hexify_float(v.last_ping_extruder_position + v.autoloadingoffset)))
+
+        # unretract only AFTER the ping -- the Palette sends this line when it
+        # resumes moves, so the filament stays retracted through the whole dwell
+        if pingretract:
+            gcode.issue_code(urt)
+            # Restore the print feedrate.  The retract/unretract set F7200
+            # (120 mm/s), and the print moves that follow are inserted
+            # mid-feature so they carry no F of their own -- without this they
+            # inherit 120 mm/s and the head "flies" after every ping (2.5x the
+            # filament draw -> buffer depletion, and ruined slow first layers).
+            # keep_speed is the current print feedrate, exactly as the
+            # accessory-mode ping restores it.
+            gcode.issue_code("G1 F{}".format(v.keep_speed))
 
         gcode.issue_code("; --- P2PP - END PING CODE", True)
 

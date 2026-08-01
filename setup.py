@@ -41,7 +41,7 @@ if sys.platform == "linux":
 
     setup(name="p2pp",
           version=version.Version,
-          description="P2PP - Palette 2 Post Processing tool for Prusa Slicer",
+          description="2-3Post Processing tool for Prusa Slicer",
           options={"build_exe": build_exe_options},
           executables=[Executable("P2PP.py", base=None, icon="icons/icon.ico")]
           )
@@ -60,7 +60,7 @@ if sys.platform == "win32":
 
     setup(name="p2pp",
           version=version.Version,
-          description="P2PP - Palette 2 Post Processing tool for Prusa Slicer",
+          description="P2PP - Palette 2-3 Post Processing tool for Prusa Slicer",
           options={"build_exe": build_exe_options},
           executables=[Executable("p2pp.py", base="Win32GUI", icon="icons/icon.ico")]
           )

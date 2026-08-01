@@ -1,9 +1,7 @@
 
 __author__ = 'Tom Van den Eede'
 __copyright__ = 'Copyright 2018-2022, Palette2 Splicer Post Processing Project'
-__credits__ = ['Tom Van den Eede',
-               'Tim Brookman'
-               ]
+__credits__ = ['Tom Van den Eede', 'Tim Brookman', 'Christer Myrland']
 __license__ = 'GPLv3'
 __maintainer__ = 'Tom Van den Eede'
 __email__ = 'P2PP@pandora.be'
@@ -154,6 +152,15 @@ last_ping_extruder_position = 0
 ping_interval = 350  # type: float
 max_ping_interval = 3000  # type: float
 ping_length_multiplier = 1.03  # type: float
+
+# Ping placement: defer a ping while the current feature is a visible/cosmetic
+# surface, so the ping's brief retract/pause never leaves a blob on the outside
+# of the part.  The ping fires at the next infill / inner-wall / wipe-tower move
+# instead.  current_feature_type tracks PrusaSlicer's ;TYPE: marker; the avoid
+# set uses those exact names.
+current_feature_type = ""  # type: str
+avoid_ping_on_visible = True  # type: bool
+ping_avoid_feature_types = ("External perimeter", "Overhang perimeter", "Top solid infill")
 sidewipe_correction = 1.0  # type: float
 autoaddsplice = False  # type: bool
 autoadded_purge = 0.0  # type: float

@@ -12,7 +12,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>P2PP - Palette 2 Post Processing Script</string>
+   <string>P2PP - Palette 2-3 Post Processing Script for Prusa Slicer</string>
   </property>
   <widget class="QWidget" name="verticalLayoutWidget">
    <layout class="QVBoxLayout" name="v" stretch="0,1,0">
@@ -84,7 +84,7 @@
          </font>
         </property>
         <property name="text">
-         <string>P2PP configurator for PrusaSlicer Configurator 2.3+</string>
+         <string>P2PP configurator for PrusaSlicer Configurator 2-3+</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
