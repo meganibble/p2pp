@@ -28,7 +28,11 @@
       "Bash(awk 'NR<=884 && /^def |^    def /{ln=NR; name=$0} END{}' p2pp/mcf.py)",
       "Bash(awk -F: '$1<=884')",
       "Bash(command -v gh)",
-      "Bash(grep -v \"^\\\\s*$\")"
+      "Bash(grep -v \"^\\\\s*$\")",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(grep -cE \"\\\\.claude|__pycache__|\\\\.pyc$|egg-info\")",
+      "Bash(git remote *)"
     ]
   }
 }
