@@ -4,6 +4,16 @@
 
 Have a look at the [P2PP Wiki pages](https://github.com/tomvandeneede/p2pp/wiki/Home) to get youstarted.
 
+## Changes in this fork (`feature/prusa_2_9_4_support`)
+
+- **PrusaSlicer 2.9.4 / 2.9.5 support**, plus a gcode fix.
+- **Connected-mode (Palette 3) improvements**, tuned for the [Klipperotchy](https://github.com/meganibble/Klipperotchy) serial bridge:
+  - Accurate pings — the print feedrate is restored after the ping retract (previously the head kept the retract speed after every ping, over-drawing filament), plus corrected ping accounting.
+  - Surface-aware ping placement — pings are deferred off visible surfaces (external/overhang perimeters, top solid infill) so the retract mark lands on infill or the wipe tower, not the outer shell.
+  - 3 mm ping retract to prevent ooze during the connected-mode ping dwell.
+  - Cancel-print support.
+  - `.mcfx` output naming.
+
 
 ## Acknowledgements
 

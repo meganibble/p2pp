@@ -1,2 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# cx_Freeze / build output
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editors / IDEs
 .idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Claude Code / local tooling
+.claude/
+
+# Temp / logs
+*.log
 /tmpfile
