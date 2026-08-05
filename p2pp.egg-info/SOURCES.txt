@@ -1,6 +1,0 @@
-README.md
-setup.py
-p2pp.egg-info/PKG-INFO
-p2pp.egg-info/SOURCES.txt
-p2pp.egg-info/dependency_links.txt
-p2pp.egg-info/top_level.txt
