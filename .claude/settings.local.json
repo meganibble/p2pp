@@ -26,7 +26,9 @@
       "Bash(awk 'NR>=740 && NR<=810 && /for .* in |while |;TYPE|command\\\\b|COMMAND|\\\\.is_comment|parsed_gcode/' p2pp/mcf.py)",
       "Bash(awk 'NR>=600 && NR<=884' p2pp/mcf.py)",
       "Bash(awk 'NR<=884 && /^def |^    def /{ln=NR; name=$0} END{}' p2pp/mcf.py)",
-      "Bash(awk -F: '$1<=884')"
+      "Bash(awk -F: '$1<=884')",
+      "Bash(command -v gh)",
+      "Bash(grep -v \"^\\\\s*$\")"
     ]
   }
 }
