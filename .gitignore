@@ -27,3 +27,9 @@ Thumbs.db
 # Temp / logs
 *.log
 /tmpfile
+
+# Ship the pre-compiled build for users who don't want to build from source.
+# This overrides the *.pyc/*.pyd/__pycache__ ignores above for this folder only,
+# so the compiled distributable is committed complete.
+!executable/
+!executable/**
