@@ -186,13 +186,14 @@ releaseinfo = {
     "9.1.06": "Fix for tripping on non layer related lines in prusa slicer, correction in layer change detection (PrusaSlicer 2.9.4+)",
     "9.1.07": "Fix bug for skipping G2 and G3 movement for splice calculation",
     "9.1.08": "Connected mode: restore print feedrate after ping retract, defer pings off visible surfaces, 3 mm ping retract, .mcfx output naming",
+    "9.1.09": "Fixed ping pauses pressure release affecting overhang quality",
     '--- RELEASE INFORMATION': 'END'
 }
 
 # general version info
 MajorVersion = 9
 MinorVersion = 1
-Build = 8
+Build = 9
 
 Version = "{}.{:02}.{:02}".format(MajorVersion, MinorVersion, Build)
 

@@ -68,68 +68,71 @@ G1 F{}
 
 # SECTION PING chk ACC/CONN
 
-def check_first_ping_condition():
-    # Never START a ping on a visible/cosmetic surface -- defer it.  The
+def check_first_ping_condition(entering_tower=True, entering_infill=False):
+    # A ping may only START at the entry of a transition-tower (preferred) or a
+    # hidden-infill block.  Perimeters (incl. inner walls) and block interiors/
+    # ends are excluded so the rest of that block covers the pause.  Infill is a
+    # fallback used only when a ping is overdue and no tower has appeared.  The
     # extrusion counter is NOT reset while deferred (the reset lives inside the
-    # caller's `if check_first_ping_condition()` block), so the ping simply
-    # fires at the next infill / inner-wall / wipe-tower move instead of
-    # blobbing the outer shell.
-    if v.avoid_ping_on_visible and v.current_feature_type in v.ping_avoid_feature_types:
+    # caller), so a not-yet-eligible ping simply waits for the next tower/infill
+    # entry instead of blobbing the shell.
+    elapsed = v.total_material_extruded - v.last_ping_extruder_position
+    if elapsed <= (v.ping_interval - 19.0):
         return False
-    return (v.total_material_extruded - v.last_ping_extruder_position) > (v.ping_interval-19.0)
+    if entering_tower:
+        return True
+    if entering_infill and elapsed > (v.ping_interval - 19.0 + v.ping_tower_grace):
+        return True
+    return False
 
 
-def check_connected_ping():
+def check_connected_ping(on_tower=False, on_infill=False):
 
-    if (not v.accessory_mode or v.connected_accessory_mode) and check_first_ping_condition():
-        v.ping_interval = v.ping_interval * v.ping_length_multiplier
-        v.ping_interval = min(v.max_ping_interval, v.ping_interval)
-        v.last_ping_extruder_position = v.total_material_extruded
-        v.ping_extruder_position.append(v.last_ping_extruder_position)
+    if v.accessory_mode and not v.connected_accessory_mode:
+        return
 
-        gcode.issue_code(
-            "; --- P2PP - INSERT PING CODE {} after {:-10.4f}mm of extrusion".format(len(v.ping_extruder_position),
-                                                                                     v.last_ping_extruder_position))
+    # Only START a ping at the ENTRY of a transition-tower or hidden-infill block
+    # (edge-detected here), so the rest of that block covers the pause and never
+    # a perimeter or a block's end.  Tower preferred; infill overdue-fallback.
+    entering_tower = on_tower and not v.ping_prev_on_tower
+    entering_infill = on_infill and not v.ping_prev_on_infill
+    v.ping_prev_on_tower = on_tower
+    v.ping_prev_on_infill = on_infill
 
-        # With FINISH_MOVES_M400 the M400 sync plus the Palette's post-ping M105
-        # polling leave the nozzle idle ~2s -- retract to stop it oozing.  Must
-        # come BEFORE the M400 so it executes as the buffer drains (i.e. right
-        # before the idle).  E is net-zero (retract now, unretract after the
-        # ping), so total_material_extruded / splice accounting is unaffected.
-        pingretract = v.finish_moves == "M400"
-        if pingretract:
-            rt, urt = get_ping_retract_code()
-            gcode.issue_code(rt)
+    if not check_first_ping_condition(entering_tower, entering_infill):
+        return
 
-        # wait for the planning buffer to clear
-        gcode.issue_code(v.finish_moves)
+    v.ping_interval = v.ping_interval * v.ping_length_multiplier
+    v.ping_interval = min(v.max_ping_interval, v.ping_interval)
+    v.last_ping_extruder_position = v.total_material_extruded
+    v.ping_extruder_position.append(v.last_ping_extruder_position)
 
+    gcode.issue_code(
+        "; --- P2PP - INSERT PING CODE {} after {:-10.4f}mm of extrusion".format(len(v.ping_extruder_position),
+                                                                                 v.last_ping_extruder_position))
 
-        # insert O31 commands format depending on device
-        if v.palette3:
-            if v.connected_accessory_mode:
-                gcode.issue_code("; --- P2PP - The next line requires Octoprint printing with the P3PING plugin!!")
-                gcode.issue_code("O40 L{:.2f} mm".format(v.last_ping_extruder_position + v.autoloadingoffset))
-                #O40 will trigger octorpint plugin to send the ping command onto the P3 Directly
-            else:
-                gcode.issue_code("O31 L{:.2f} mm".format(v.last_ping_extruder_position + v.autoloadingoffset))
+    # No ping retract.  The ping now starts only at the entry of a tower/infill
+    # block and the M400 pause is bounded (~1s) by the serial bridge, so the tiny
+    # ooze during the pause lands on throwaway/hidden geometry that the rest of
+    # the block covers.  Keeping the melt pressurised -- no retract/unretract --
+    # is what removes the per-ping flow ripple on the model.  (get_ping_retract_code
+    # is still used by accessory mode.)
+
+    # wait for the planning buffer to clear so the O31 position is accurate
+    gcode.issue_code(v.finish_moves)
+
+    # insert O31 commands format depending on device
+    if v.palette3:
+        if v.connected_accessory_mode:
+            gcode.issue_code("; --- P2PP - The next line requires Octoprint printing with the P3PING plugin!!")
+            gcode.issue_code("O40 L{:.2f} mm".format(v.last_ping_extruder_position + v.autoloadingoffset))
+            #O40 will trigger octorpint plugin to send the ping command onto the P3 Directly
         else:
-            gcode.issue_code("O31 {}".format(hexify_float(v.last_ping_extruder_position + v.autoloadingoffset)))
+            gcode.issue_code("O31 L{:.2f} mm".format(v.last_ping_extruder_position + v.autoloadingoffset))
+    else:
+        gcode.issue_code("O31 {}".format(hexify_float(v.last_ping_extruder_position + v.autoloadingoffset)))
 
-        # unretract only AFTER the ping -- the Palette sends this line when it
-        # resumes moves, so the filament stays retracted through the whole dwell
-        if pingretract:
-            gcode.issue_code(urt)
-            # Restore the print feedrate.  The retract/unretract set F7200
-            # (120 mm/s), and the print moves that follow are inserted
-            # mid-feature so they carry no F of their own -- without this they
-            # inherit 120 mm/s and the head "flies" after every ping (2.5x the
-            # filament draw -> buffer depletion, and ruined slow first layers).
-            # keep_speed is the current print feedrate, exactly as the
-            # accessory-mode ping restores it.
-            gcode.issue_code("G1 F{}".format(v.keep_speed))
-
-        gcode.issue_code("; --- P2PP - END PING CODE", True)
+    gcode.issue_code("; --- P2PP - END PING CODE", True)
 
 # SECTION ACC MODE PING 1 and 2
 

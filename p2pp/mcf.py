@@ -886,7 +886,10 @@ def parse_gcode_second_pass():
         else:
             gcode.issue_command(g)
             if g[gcode.EXTRUDE] and v.side_wipe_length == 0:
-                pings.check_connected_ping()
+                on_tower = current_block_class in [CLS_TOOL_PURGE, CLS_EMPTY]
+                on_infill = (current_block_class == CLS_NORMAL
+                             and v.current_feature_type in v.ping_allow_infill_types)
+                pings.check_connected_ping(on_tower, on_infill)
 
         v.previous_position_x = v.current_position_x
         v.previous_position_y = v.current_position_y
