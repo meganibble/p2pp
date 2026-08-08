@@ -153,14 +153,18 @@ ping_interval = 350  # type: float
 max_ping_interval = 3000  # type: float
 ping_length_multiplier = 1.03  # type: float
 
-# Ping placement: defer a ping while the current feature is a visible/cosmetic
-# surface, so the ping's brief retract/pause never leaves a blob on the outside
-# of the part.  The ping fires at the next infill / inner-wall / wipe-tower move
-# instead.  current_feature_type tracks PrusaSlicer's ;TYPE: marker; the avoid
-# set uses those exact names.
+# Connected-mode ping placement.  A ping may only START at the ENTRY of a
+# transition-tower (preferred) or hidden-infill block, never on perimeters and
+# never in a block's interior/end -- so the remainder of that block covers the
+# brief M400 pause's ooze and re-primes the flow before any visible surface is
+# printed.  Inner walls are excluded on purpose: an inner-wall blob telegraphs
+# into the outer wall laid against it a moment later.  current_feature_type
+# tracks PrusaSlicer's ;TYPE: marker (exact names).
 current_feature_type = ""  # type: str
-avoid_ping_on_visible = True  # type: bool
-ping_avoid_feature_types = ("External perimeter", "Overhang perimeter", "Top solid infill")
+ping_allow_infill_types = ("Internal infill", "Solid infill")  # hidden infill only
+ping_tower_grace = 150.0     # mm overdue before falling back from tower to infill
+ping_prev_on_tower = False   # type: bool  -- block-entry edge detection
+ping_prev_on_infill = False  # type: bool
 sidewipe_correction = 1.0  # type: float
 autoaddsplice = False  # type: bool
 autoadded_purge = 0.0  # type: float
