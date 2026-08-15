@@ -124,27 +124,22 @@ def parse_config_parameters():
 
         if gcode_line.startswith("; estimated printing time"):
             try:
-                fields = gcode_line.split("=")
-                fields = fields[-1].split(" ")
-                for i in range(len(fields)):
-                    fields[i] = "0" + fields[i].strip('hms')
+                # PrusaSlicer writes this as "43s", "3m 12s", "2h 24m 43s" or --
+                # on prints of 24h or more -- "1d 2h 24m 43s".
+                #
+                # Parse by UNIT SUFFIX, not by position.  The previous version
+                # read only the last three fields (h/m/s), so the leading DAY
+                # field was silently dropped: a 1d 2h 24m 43s print was recorded
+                # as 8683s (2h24m43s) instead of 95083s.  The Palette counts its
+                # progress down against this figure, reaches zero long before the
+                # print is done and ends the job mid-print.
+                units = {'d': 86400, 'h': 3600, 'm': 60, 's': 1}
+                total = 0
+                for token in gcode_line.split("=")[-1].split():
+                    if len(token) > 1 and token[-1] in units and token[:-1].isdigit():
+                        total += int(token[:-1]) * units[token[-1]]
 
-                if len(fields) > 2:
-                    h = int(fields[-3])
-                else:
-                    h = 0
-
-                if len(fields) > 1:
-                    m = int(fields[-2])
-                else:
-                    m = 0
-
-                if len(fields) > 0:
-                    s = int(fields[-1])
-                else:
-                    s = 0
-
-                v.printing_time = h*3600 + m*60 + s
+                v.printing_time = total
 
             except (ValueError, IndexError):
                 pass

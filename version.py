@@ -188,13 +188,14 @@ releaseinfo = {
     "9.1.08": "Connected mode: restore print feedrate after ping retract, defer pings off visible surfaces, 3 mm ping retract, .mcfx output naming",
     "9.1.09": "Fixed ping pauses pressure release affecting overhang quality",
     "9.1.10": "Allow ping on raft, support material and infill",
+    "9.1.11": "Fixed print time parsing dropping the day field on prints > 24h or more",
     '--- RELEASE INFORMATION': 'END'
 }
 
 # general version info
 MajorVersion = 9
 MinorVersion = 1
-Build = 9
+Build = 11
 
 Version = "{}.{:02}.{:02}".format(MajorVersion, MinorVersion, Build)
 
