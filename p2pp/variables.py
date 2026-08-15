@@ -153,17 +153,26 @@ ping_interval = 350  # type: float
 max_ping_interval = 3000  # type: float
 ping_length_multiplier = 1.03  # type: float
 
-# Connected-mode ping placement.  A ping may only START at the ENTRY of a
-# transition-tower (preferred) or hidden-infill block, never on perimeters and
-# never in a block's interior/end -- so the remainder of that block covers the
-# brief M400 pause's ooze and re-primes the flow before any visible surface is
-# printed.  Inner walls are excluded on purpose: an inner-wall blob telegraphs
-# into the outer wall laid against it a moment later.  current_feature_type
-# tracks PrusaSlicer's ;TYPE: marker (exact names).
+# Connected-mode ping placement.  A ping may only START at the ENTRY of a block
+# whose remainder can cover the brief M400 pause's ooze and re-prime the flow --
+# never on a perimeter, and never in a block's interior/end.  Two tiers:
+#
+#   sacrificial (preferred, fires as soon as a ping is due) -- the transition
+#     tower, plus support material and the raft.  All of it is thrown away after
+#     the print, so a ping mark there costs nothing.  NOTE: PrusaSlicer emits the
+#     raft using the support-material ;TYPE: labels -- there is no ";TYPE:Raft" --
+#     so the support names below cover raft layers too.
+#   infill (fallback, only once ping_tower_grace mm overdue) -- hidden infill
+#     inside the model, used when no sacrificial block has come along in time.
+#
+# Inner walls are excluded on purpose: an inner-wall blob telegraphs into the
+# outer wall laid against it a moment later.  current_feature_type tracks
+# PrusaSlicer's ;TYPE: marker (exact names).
 current_feature_type = ""  # type: str
+ping_allow_support_types = ("Support material", "Support material interface")
 ping_allow_infill_types = ("Internal infill", "Solid infill")  # hidden infill only
-ping_tower_grace = 150.0     # mm overdue before falling back from tower to infill
-ping_prev_on_tower = False   # type: bool  -- block-entry edge detection
+ping_tower_grace = 150.0     # mm overdue before falling back to infill
+ping_prev_on_sacrificial = False  # type: bool  -- block-entry edge detection
 ping_prev_on_infill = False  # type: bool
 sidewipe_correction = 1.0  # type: float
 autoaddsplice = False  # type: bool
