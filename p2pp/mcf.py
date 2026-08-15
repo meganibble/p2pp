@@ -886,10 +886,15 @@ def parse_gcode_second_pass():
         else:
             gcode.issue_command(g)
             if g[gcode.EXTRUDE] and v.side_wipe_length == 0:
-                on_tower = current_block_class in [CLS_TOOL_PURGE, CLS_EMPTY]
+                # Sacrificial geometry -- thrown away after the print, so a ping
+                # mark costs nothing: the transition tower, plus support material
+                # and the raft (PrusaSlicer labels raft layers with the support
+                # ;TYPE: names).  Hidden infill is the overdue fallback.
+                on_sacrificial = (current_block_class in [CLS_TOOL_PURGE, CLS_EMPTY]
+                                  or v.current_feature_type in v.ping_allow_support_types)
                 on_infill = (current_block_class == CLS_NORMAL
                              and v.current_feature_type in v.ping_allow_infill_types)
-                pings.check_connected_ping(on_tower, on_infill)
+                pings.check_connected_ping(on_sacrificial, on_infill)
 
         v.previous_position_x = v.current_position_x
         v.previous_position_y = v.current_position_y

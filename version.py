@@ -187,6 +187,7 @@ releaseinfo = {
     "9.1.07": "Fix bug for skipping G2 and G3 movement for splice calculation",
     "9.1.08": "Connected mode: restore print feedrate after ping retract, defer pings off visible surfaces, 3 mm ping retract, .mcfx output naming",
     "9.1.09": "Fixed ping pauses pressure release affecting overhang quality",
+    "9.1.10": "Allow ping on raft, support material and infill",
     '--- RELEASE INFORMATION': 'END'
 }
 

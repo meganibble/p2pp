@@ -68,38 +68,40 @@ G1 F{}
 
 # SECTION PING chk ACC/CONN
 
-def check_first_ping_condition(entering_tower=True, entering_infill=False):
-    # A ping may only START at the entry of a transition-tower (preferred) or a
-    # hidden-infill block.  Perimeters (incl. inner walls) and block interiors/
-    # ends are excluded so the rest of that block covers the pause.  Infill is a
-    # fallback used only when a ping is overdue and no tower has appeared.  The
+def check_first_ping_condition(entering_sacrificial=True, entering_infill=False):
+    # A ping may only START at the entry of a sacrificial block (transition
+    # tower / support material / raft -- preferred) or a hidden-infill block.
+    # Perimeters (incl. inner walls) and block interiors/ends are excluded so
+    # the rest of that block covers the pause.  Infill is a fallback used only
+    # when a ping is overdue and no sacrificial block has appeared.  The
     # extrusion counter is NOT reset while deferred (the reset lives inside the
-    # caller), so a not-yet-eligible ping simply waits for the next tower/infill
-    # entry instead of blobbing the shell.
+    # caller), so a not-yet-eligible ping simply waits for the next eligible
+    # block entry instead of blobbing the shell.
     elapsed = v.total_material_extruded - v.last_ping_extruder_position
     if elapsed <= (v.ping_interval - 19.0):
         return False
-    if entering_tower:
+    if entering_sacrificial:
         return True
     if entering_infill and elapsed > (v.ping_interval - 19.0 + v.ping_tower_grace):
         return True
     return False
 
 
-def check_connected_ping(on_tower=False, on_infill=False):
+def check_connected_ping(on_sacrificial=False, on_infill=False):
 
     if v.accessory_mode and not v.connected_accessory_mode:
         return
 
-    # Only START a ping at the ENTRY of a transition-tower or hidden-infill block
-    # (edge-detected here), so the rest of that block covers the pause and never
-    # a perimeter or a block's end.  Tower preferred; infill overdue-fallback.
-    entering_tower = on_tower and not v.ping_prev_on_tower
+    # Only START a ping at the ENTRY of a sacrificial (tower / support / raft) or
+    # hidden-infill block -- edge-detected here -- so the rest of that block
+    # covers the pause and never a perimeter or a block's end.  Sacrificial is
+    # preferred; infill is the overdue fallback.
+    entering_sacrificial = on_sacrificial and not v.ping_prev_on_sacrificial
     entering_infill = on_infill and not v.ping_prev_on_infill
-    v.ping_prev_on_tower = on_tower
+    v.ping_prev_on_sacrificial = on_sacrificial
     v.ping_prev_on_infill = on_infill
 
-    if not check_first_ping_condition(entering_tower, entering_infill):
+    if not check_first_ping_condition(entering_sacrificial, entering_infill):
         return
 
     v.ping_interval = v.ping_interval * v.ping_length_multiplier
